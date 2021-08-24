@@ -18,6 +18,11 @@
         margin-left: 0;
         margin-right: 0;
     }
+    p {
+        line-height: 18px;
+        font-size: 16px;
+        padding: 5px 0;
+    }
 
     .breadcrumb {
        
@@ -39,8 +44,10 @@
         }
     }
     &__img {
-        margin-bottom: 20px;
+        margin: 20px auto;
         width: 100%;
+        display: flex;
+        max-width: 60%;
     }
 
     &__details {

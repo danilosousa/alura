@@ -45,9 +45,17 @@ $browser-content:16; //default
     justify-content: center;
     flex-wrap: wrap;
     font-family: $fontMain;
+    width: 80%;
+    margin: 30px auto;
 
     @include for-desktop-only {
         flex-wrap: nowrap;
+    }
+    @include for-tablet-only {
+        width: 100%;
+    }
+    @include for-phone-only {
+        width: 100%;
     }
 
     &__content{
@@ -55,12 +63,12 @@ $browser-content:16; //default
             width: 100%;
         }
         
-        width: 70%;
+        width: 65%;
         padding: 40px 8px;
     }
     &__post{
         text-align: center;
-        max-width: 800px;
+        //max-width: 800px;
         margin: 0 auto;
     }
 
@@ -102,6 +110,7 @@ $browser-content:16; //default
 
     &__img {
         width: 100%;
+        max-width: 60%;
     }
 
     &__description {
@@ -162,8 +171,14 @@ $browser-content:16; //default
     }
 
     &__sidebar {
-        width: 25%;
-        padding: 25px 40px;
+        width: 35%;
+        //padding: 25px 40px;
+        @include for-tablet-only {
+            width: 100%;
+        }
+        @include for-phone-only {
+            width: 100%;
+        }
     }
 
     .sidebar {
@@ -206,7 +221,7 @@ $browser-content:16; //default
         }
 
         &__post-title {
-            font-size: rem(22);
+            font-size: rem(16);
             color: $purple;
             @extend %no-decoration;
 
