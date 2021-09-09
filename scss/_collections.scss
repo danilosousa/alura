@@ -91,6 +91,7 @@ $full-width: 100%;
        width: 20%;
        @include for-phone-only {
            font-size: rem(10);
+           margin: 0 30px;
        }
        @include for-tablet-only {   
            width: 30%;

@@ -38,7 +38,7 @@ $browser-content:16; //default
     @return #{$pixels/$content}rem;
 }
 
-@import 'header', 'footer', 'about', 'article', 'collections';
+@import 'header', 'footer', 'about', 'article', 'collections', 'contact';
 
 .main{
     display: flex;
